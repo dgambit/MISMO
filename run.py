@@ -5,7 +5,7 @@ from schelling import SchellingAgent, SchellingModel
 
 
 
-params = {"side": [30], density:[.3,.5],
+params = {"side": [30], "density":[.3,.5],
 			"n_towns":3, 
 			"mobility": [
                                                  {"model" :"radiation", "metric":"relevance"}
