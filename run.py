@@ -5,14 +5,10 @@ from schelling import SchellingAgent, SchellingModel
 
 
 
-params = {"side": [10],
+params = {"side": [30], density:[.3,.5],
 			"n_towns":3, 
-			"mobility": [{"model" :"classic"},
-                                                 {"model" :"gravity", "metric":"relevance", "alpha":1.5, "beta":1},
-                                                 {"model" :"gravity", "metric":"relevance", "alpha":1.5, "beta":1.5},
-                                                 {"model" :"gravity", "metric":"relevance", "alpha":1.5, "beta":2},
-                                                 {"model" :"gravity", "metric":"relevance", "alpha":0.5, "beta":.5},
-                                                 {"model" :"gravity", "metric":"relevance", "alpha":0.5, "beta":1}
+			"mobility": [
+                                                 {"model" :"radiation", "metric":"relevance"}
                                      ]}
 
 iterations = 10
