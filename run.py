@@ -5,10 +5,37 @@ from schelling import SchellingAgent, SchellingModel
 
 
 
-params = {"side": [30], "density":[.3,.5],
-			"n_towns":3, 
-			"mobility": [
-                                                 {"model" :"radiation", "metric":"relevance"}
+params = {"side": [50], "density":[.3],
+			"n_towns":3,     
+			"mobility": [{"model" :"classic"},
+
+                         {"model" :"gravity", "alpha":1, "beta":1, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":1.5, "beta":1, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":2, "beta":1, "metric":"relevance"},
+                         
+                         {"model" :"gravity", "alpha":1, "beta":1.2, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":1.5, "beta":1.2, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":2, "beta":1.2, "metric":"relevance"},
+                         
+                         {"model" :"gravity", "alpha":1, "beta":1.4, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":1.5, "beta":1.4, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":2, "beta":1.4, "metric":"relevance"},
+                         
+                         {"model" :"gravity", "alpha":1, "beta":1.6, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":1.5, "beta":1.6, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":2, "beta":1.6, "metric":"relevance"},
+                         
+                         {"model" :"gravity", "alpha":1, "beta":1.8, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":1.5, "beta":1.8, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":2, "beta":1.8, "metric":"relevance"},
+                         
+
+                         {"model" :"gravity", "alpha":1, "beta":2, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":1.5, "beta":2, "metric":"relevance"},
+                         {"model" :"gravity", "alpha":2, "beta":2, "metric":"relevance"},
+
+    
+                         {"model" :"radiation", "metric":"relevance"}
                                      ]}
 
 iterations = 10
